@@ -127,7 +127,7 @@ use phpseclib\Math\BigInteger;
  * @version 0.3.1
  * @access  public
  */
-class X059
+class X509
 {
     /**
      * ASN.1 syntax for X.509 certificates
