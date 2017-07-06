@@ -119,7 +119,7 @@ use phpseclib\Math\BigInteger;
  * @version 0.3.0
  * @access  public
  */
-class ASN1_Element
+class ASN1
 {
     /**
      * Raw element value
