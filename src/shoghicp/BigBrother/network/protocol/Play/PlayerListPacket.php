@@ -74,7 +74,7 @@ class PlayerListPacket extends Packet{
 					$this->put($player[0]);//UUID
 					break;
 				default:
-					echo "PlayerListPacket: ".$this->actionID."\n";
+					plugin->getLogger()->info("...");
 					break;
 			}
 		}
