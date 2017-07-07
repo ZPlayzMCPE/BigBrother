@@ -396,7 +396,7 @@ class ConvertUtils{
 					//Unused
 				break;
 				default:
-					echo "key: ".$bottom." Not implemented\n";
+					$ConvertUtils->getLogger()->info("...");;
 				break;
 				//TODO: add data type
 			}
