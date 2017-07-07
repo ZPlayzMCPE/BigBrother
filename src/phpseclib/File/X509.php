@@ -122,12 +122,12 @@ use phpseclib\Math\BigInteger;
 /**
  * Pure-PHP X.509 Parser
  *
- * @package X059
+ * @package X509
  * @author  Jim Wigginton <terrafrost@php.net>
  * @version 0.3.1
  * @access  public
  */
-class X059
+class X509
 {
     /**
      * ASN.1 syntax for X.509 certificates
