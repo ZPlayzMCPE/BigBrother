@@ -159,7 +159,7 @@ class Translator{
 						$player->putRawPacket($pk);
 					break;
 					default:
-						echo "ClientStatusPacket: ".$packet->actionID."\n";
+						plugin->getLogger()->info("...");
 					break;
 				}
 				return null;
@@ -198,7 +198,7 @@ class Translator{
 						$player->setSetting(["ServerType" => $packet->data]);
 					break;
 					default:
-						echo "PluginChannel: ".$packet->channel."\n";
+						plugin->getLogger()->info("...");
 					break;
 				}
 				return null;
@@ -353,7 +353,7 @@ class Translator{
 							$packets[] = $pk;
 							return $packets;
 						}else{
-							echo "PlayerDiggingPacket: ".$packet->status."\n";
+							plugin->getLogger()->info("...");
 						}
 					break;
 					case 3:
@@ -393,7 +393,7 @@ class Translator{
 						return $pk;
 					break;
 					default:
-						echo "PlayerDiggingPacket: ".$packet->status."\n";
+						plugin->getLogger()->info("...");
 					break;
 				}
 
@@ -452,7 +452,7 @@ class Translator{
 						return $pk;
 					break;
 					default:
-						echo "EntityActionPacket: ".$packet->actionID."\n";
+						plugin->getLogger()->info("...");
 					break;
 				}
 
@@ -526,7 +526,7 @@ class Translator{
 
 					return $pk;
 				}else{
-					echo "PlayerBlockPlacementPacket: ".$packet->direction."\n";
+					plugin->getLogger()->info("...");
 				}
 
 				return null;
@@ -1158,7 +1158,7 @@ class Translator{
 						//unused
 					break;
 					default:
-						echo "EntityEventPacket: ".$packet->event."\n";
+						plugin->getLogger()->info("...");
 					break;
 				}
 
@@ -1190,7 +1190,7 @@ class Translator{
 						return $pk;
 					break;
 					default:
-						echo "MobEffectPacket: ".$packet->eventId."\n";
+						plugin->getLogger()->info("...");
 					break;
 				}
 				
@@ -1453,7 +1453,7 @@ class Translator{
 						$pk->namedtag = $nbt;
 					break;
 					default:
-						echo "BlockEntityDataPacket: ".$nbt["id"]."\n";
+						plugin->getLogger()->info("...");
 						return null;
 					break;
 				}
