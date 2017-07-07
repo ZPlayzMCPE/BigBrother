@@ -18,7 +18,7 @@
 namespace shoghicp\BigBrother;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\network\mcpe\protocol\Info;
+use pocketmine\network\Info;
 use pocketmine\block\Block;
 use pocketmine\block\Chest;
 use pocketmine\event\player\PlayerRespawnEvent;
