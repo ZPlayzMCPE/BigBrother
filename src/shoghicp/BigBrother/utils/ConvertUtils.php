@@ -408,32 +408,3 @@ class ConvertUtils{
 	}
 
 }
-
-
-class ComputerItem{
-	public $id = 0, $damage = 0, $count = 0, $nbt = "";
-
-	public function __construct($id = 0, $damage = 0, $count = 1, $nbt = ""){
-		$this->id = $id;
-		$this->damage = $damage;
-		$this->count = $count;
-		$this->nbt = $nbt;
-	}
-
-	public function getID(){
-		return $this->id;
-	}
-
-	public function getDamage(){
-		return $this->damage;
-	}
-
-	public function getCount(){
-		return $this->count;
-	}
-
-	public function getCompoundTag(){
-		return $this->nbt;
-	}
-
-}
