@@ -195,7 +195,7 @@ class ProtocolInterface implements SourceInterface{
 		if(\pocketmine\DEBUG > 3){
 			$id = bin2hex(chr(ord($payload{0})));
 			if($id !== "0b"){//KeepAlivePacket
-				echo "[Receive][Interface] 0x".bin2hex(chr(ord($payload{0})))."\n";
+				$plugin->getLogger()->info("...");
 			}
 		}
 
