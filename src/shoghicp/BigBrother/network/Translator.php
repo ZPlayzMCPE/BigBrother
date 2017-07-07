@@ -550,7 +550,7 @@ class Translator{
 
 			default:
 				if(\pocketmine\DEBUG > 3){
-					echo "[Receive][Translator] 0x".bin2hex(chr($packet->pid()))." Not implemented\n";
+					$plugin->getLogger()->info("...");
 				}
 				return null;
 		}
@@ -859,7 +859,7 @@ class Translator{
 					break;*/
 					default:
 						$packet->type = 57;
-						echo "AddEntityPacket: ".$packet->entityRuntimeId."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 
@@ -1068,7 +1068,7 @@ class Translator{
 						}
 					break;
 					default:
-						echo "LevelEventPacket: ".$packet->evid."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 
@@ -1271,7 +1271,7 @@ class Translator{
 							];
 						break;
 						default:
-							echo "UpdateAtteributesPacket: ".$entry->getName()."\n";
+							$plugin->getLogger()->info("...");
 						break;
 					}
 				}
@@ -1403,7 +1403,7 @@ class Translator{
 						return $pk;
 					break;
 					default:
-						echo "AnimatePacket: ".$packet->actionID."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}	
 				return null;
@@ -1630,7 +1630,7 @@ class Translator{
 						return $pk;
 					break;
 					default:
-						echo "BossEventPacket: ".$packet->type."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 				return null;
@@ -1686,7 +1686,7 @@ class Translator{
 
 			default:
 				if(\pocketmine\DEBUG > 3){
-					echo "[Send][Translator] 0x".bin2hex(chr($packet->pid()))." Not implemented\n";
+					$plugin->getLogger()->info("...");
 				}
 				return null;
 		}
