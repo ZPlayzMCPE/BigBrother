@@ -126,7 +126,7 @@ class ProtocolInterface implements SourceInterface{
 		if(\pocketmine\DEBUG > 3){
 			$id = bin2hex(chr($packet->pid()));
 			if($id !== "1f"){
-				echo "[Send][Interface] 0x".bin2hex(chr($packet->pid()))."\n";
+				$plugin->getLogger()->info("...");
 			}
 		}
 		
