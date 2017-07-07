@@ -18,7 +18,7 @@
 namespace shoghicp\BigBrother;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\network\Info;
+use pocketmine\network\ProtocolInfo as Info;
 use pocketmine\block\Block;
 use pocketmine\block\Chest;
 use pocketmine\event\player\PlayerRespawnEvent;
@@ -28,7 +28,7 @@ use pocketmine\utils\TextFormat;
 use pocketmine\Achievement;
 
 use phpseclib\Crypt\RSA;
-use shoghicp\BigBrother\network\Info as MCInfo;
+use shoghicp\BigBrother\network\Info;
 use shoghicp\BigBrother\network\ProtocolInterface;
 use shoghicp\BigBrother\network\Translator;
 use shoghicp\BigBrother\network\protocol\Play\RespawnPacket;
