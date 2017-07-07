@@ -410,7 +410,7 @@ class ConvertUtils{
 }
 
 
-class ComputerItem
+class ComputerItem{
 	public $id = 0, $damage = 0, $count = 0, $nbt = "";
 
 	public function __construct($id = 0, $damage = 0, $count = 1, $nbt = ""){
