@@ -75,6 +75,7 @@ class PlayerListPacket extends Packet{
 					break;
 				default:
 					plugin->getLogger()->info("...");
+					
 					break;
 			}
 		}
