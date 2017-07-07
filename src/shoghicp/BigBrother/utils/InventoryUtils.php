@@ -95,7 +95,7 @@ class InventoryUtils{
 				$title = "Furnace";
 			break;
 			default://TODO: http://wiki.vg/Inventory#Windows
-				echo "[InventoryUtils] ContainerOpenPacket: ".$packet->type."\n";
+				$plugin->getLogger()->info("...");
 
 				$pk = new ContainerClosePacket();
 				$pk->windowid = $packet->windowid;
@@ -186,7 +186,7 @@ class InventoryUtils{
 			case ContainerSetContentPacket::SPECIAL_HOTBAR:
 			break;
 			default:
-				echo "[InventoryUtils] ContainerSetSlotPacket: 0x".bin2hex(chr($packet->windowid))."\n";
+				$plugin->getLogger()->info("...");
 			break;
 		}
 		return null;
@@ -268,7 +268,7 @@ class InventoryUtils{
 					return $pk;
 				}
 
-				echo "[InventoryUtils] ContainerSetContentPacket: 0x".bin2hex(chr($packet->windowid))."\n";
+				$plugin->getLogger()->info("...");
 			break;
 		}
 
@@ -298,7 +298,7 @@ class InventoryUtils{
 
 					break;
 					default:
-						echo "[InventoryUtils] UnknownButtonType: ".$packet->mode." : ".$packet->button."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 			break;
@@ -309,7 +309,7 @@ class InventoryUtils{
 
 					break;
 					default:
-						echo "[InventoryUtils] UnknownButtonType: ".$packet->mode." : ".$packet->button."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 			break;
@@ -343,7 +343,7 @@ class InventoryUtils{
 
 					break;
 					default:
-						echo "[InventoryUtils] UnknownButtonType: ".$packet->mode." : ".$packet->button."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 			break;
@@ -353,7 +353,7 @@ class InventoryUtils{
 
 					break;
 					default:
-						echo "[InventoryUtils] UnknownButtonType: ".$packet->mode." : ".$packet->button."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 			break;
@@ -374,7 +374,7 @@ class InventoryUtils{
 						}
 					break;
 					default:
-						echo "[InventoryUtils] UnknownButtonType: ".$packet->mode." : ".$packet->button."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 			break;
@@ -408,7 +408,7 @@ class InventoryUtils{
 
 					break;
 					default:
-						echo "[InventoryUtils] UnknownButtonType: ".$packet->mode." : ".$packet->button."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 			break;
@@ -418,12 +418,12 @@ class InventoryUtils{
 
 					break;
 					default:
-						echo "[InventoryUtils] UnknownButtonType: ".$packet->mode." : ".$packet->button."\n";
+						$plugin->getLogger()->info("...");
 					break;
 				}
 			break;
 			default:
-				echo "[InventoryUtils] ClickWindowPacket: ".$packet->mode."\n";
+						$plugin->getLogger()->info("...");
 			break;
 		}
 
